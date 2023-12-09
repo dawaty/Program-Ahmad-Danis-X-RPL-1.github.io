@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <h1> Kalkulator menghitung luas bangun </h1>
+
+
+    <div>
+        <select multiple name="menu" id="menu" onclick="pilihMenu()">
+            <option value="persegiPanjang"> Persegi Panjang </option>
+            <option value="segitiga"> Segitiga </option>
+            <option value="lingkaran"> Lingkaran</option>
+            <option value="kubus">Kubus </option>
+        </select>
+    </div>
+
+    <div id="persegiPanjang" style="display: none;">
+        <div>
+            <label> Panjang </label>
+            <input type="number" name="panjang" id="panjang" value="0" />
+        </div>
+        <div>
+            <label> Lebar </label>
+            <input type="number" name="lebar" id="lebar" value="0" />
+        </div>
+    </div>
+
+    <div id="lingkaran" style="display: none;">
+        <div>
+            <label> Panjang Jari Jari </label>
+            <input type="number" name="jariJari" id="jariJari" value="0" />
+        </div>
+    </div>
+
+    <div id="segitiga" style="display: none;">
+        <div>
+            <label>Alas</label>
+            <input type="number" name="alas" id="alas" value="0" />
+        </div>
+        <div>
+            <label>Tinggi</label>
+            <input type="number" name="tinggi" id="tinggi" value="0" />
+        </div>
+    </div>
+
+    <div id="kubus" style="display: none;">
+        <div>
+            <label>Sisi</label>
+            <input type="sisi" name="sisi" id="sisi" value="0" />
+        </div>
+    </div>
+    
+          
+
+
+
+
+
+
+    <div>
+        <input type="button" name="hitung" id="hitung" value="Hitung" onclick="cetakHasilHitung()" />
+    </div>
+
+    <div id="cetakHasil">
+        Hasi menghitung luas bangun
+    </div>
+
+
+
+
+
+
+
+    <script src="apps.js"></script>
+</body>
+
+</html>
